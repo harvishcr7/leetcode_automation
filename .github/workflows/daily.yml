@@ -34,6 +34,7 @@ jobs:
           LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
           LEETCODE_CSRF: ${{ secrets.LEETCODE_CSRF }}
           AUTO_SUBMIT: "True"
+          LEETCODE_LANG: "java"
           RECIPIENT_EMAIL: "harvishvarshanrk@gmail.com"
           SMTP_EMAIL: ${{ secrets.SMTP_EMAIL }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}

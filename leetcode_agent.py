@@ -38,7 +38,9 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 LEETCODE_SESSION = os.getenv("LEETCODE_SESSION", "PASTE_LEETCODE_SESSION_COOKIE")
 LEETCODE_CSRF = os.getenv("LEETCODE_CSRF", "PASTE_CSRFTOKEN_COOKIE")
-LANG = os.getenv("LANG", "java")            # java, python3, cpp, javascript, ...
+LANG = os.getenv("LEETCODE_LANG", os.getenv("PROGRAMMING_LANG", "java")).lower()
+if LANG not in ("java", "python3", "cpp", "javascript", "golang", "csharp", "typescript"):
+    LANG = "java"
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-lite-latest")
 ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-3-5-sonnet-20241022")
 AUTO_SUBMIT = os.getenv("AUTO_SUBMIT", "True").lower() in ("true", "1", "yes")
