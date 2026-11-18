@@ -106,3 +106,5 @@ date,number,title,difficulty,status
 2026-11-15T04:21:35,413,Arithmetic Slices,MEDIUM,Accepted
 2026-11-16T04:58:36,390,Elimination Game,MEDIUM,Accepted
 2026-11-17T04:21:48,423,Reconstruct Original Digits from English,MEDIUM,Accepted
+2026-11-18T04:24:39,541,Reverse String II,EASY,Accepted
+2026-11-18T04:24:52,341,Flatten Nested List Iterator,MEDIUM,Accepted
